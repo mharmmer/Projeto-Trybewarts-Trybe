@@ -59,6 +59,7 @@ const housesStyle = () => {
 houses.addEventListener('change', housesStyle);
 
 // TextArea counter
+
 const spanArea = document.getElementById('textarea-span');
 const textArea = document.getElementById('textarea');
 
