@@ -21,18 +21,6 @@ const observations = document.getElementById('textarea');
 
 submitButton.disabled = true;
 
-function validateLogin() {
-  if (inputEmail.value === 'tryber@teste.com' && inputPassword.value === '123456') {
-    alert('Olá, Tryber!');
-    inputEmail.value = '';
-    inputPassword.value = '';
-  } else {
-    alert('Email ou senha inválidos.');
-    inputEmail.value = '';
-    inputPassword.value = '';
-  }
-}
-
 function createProfile() {
   const div = document.createElement('div');
   div.setAttribute('id', 'form-data');
@@ -135,5 +123,3 @@ const counter = document.querySelector('#counter');
 textArea.addEventListener('input', () => {
   counter.innerText = `${textArea.textLength} | ${textArea.maxLength - (textArea.textLength)}`;
 });
-
-// Projeto Completo - Matheus Harmmer
