@@ -103,13 +103,13 @@ main {
   margin: 2%;
   padding: 3%;
   border-radius: 10px;
-  height: fit-content;
+  height: 10%;
 }
 
-/* #evaluation-form:hover {
-  box-shadow: inset 0px 0px 70px 15px rgb(255 255 255 / 10%);
+#evaluation-form:hover {
+  backdrop-filter: saturate(150%) blur(10px);
   transition: 50ms;
-} */
+}
 
 #evaluation-form h2 {
   margin-bottom: 40px;
@@ -195,6 +195,8 @@ main {
 #text-area-container textarea {
   border-radius: 5px;
   height: 200px;
+  font-family: 'Overpass', sans-serif;
+  padding: 10px;
 }
 
 #area-span-container {
@@ -215,7 +217,10 @@ main {
 
 #submit-btn {
   margin: 20px;
-  width: 100%;
+  width: 50%;
+  display: flex;
+    justify-content: center;
+
 }
 
 footer {
@@ -223,12 +228,12 @@ footer {
   backdrop-filter: saturate(223%) blur(10px);
   color: whitesmoke;
 
-  /* . */
+  /* displays */
   display: flex;
   justify-content: center;
   align-items: center;
 
-  /* . */
+  /* size */
   height: 50px;
   bottom: 0;
   width: 100%;
