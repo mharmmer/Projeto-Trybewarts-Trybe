@@ -25,14 +25,14 @@
 
   <main id="main">
     <form action="" id="evaluation-form">
-      <h2>Formulario de Avaliacao</h2>
+      <h2>Formulário de Avaliação</h2>
 
       <div id="identifier-container">
         <input type="text" name="" id="input-name" class="identifier-class" placeholder="Nome">
         <input type="text" name="" id="input-lastname" class="identifier-class" placeholder="Sobrenome">
         <input type="email" name="" id="input-email" class="identifier-class" placeholder="Email">
 
-        <select name="" id="house" required class="identifier-class" >
+        <select name="" id="house" required class="identifier-class">
           <option hidden value="noneOption" class="identifier-class">Selecione sua casa aqui</option>
           <option value="Gitnória" id="gitnoria-house" class="identifier-class">Gitnória</option>
           <option value="Reactpuff" id="reactpuff-house" class="identifier-class">Reactpuff</option>
@@ -82,10 +82,11 @@
 
         <label for="textarea" class="textarea">Deixe seu comentário:</label>
         <br>
-        <textarea name="" id="textarea" cols="60" rows="5" maxlength="500" minlength="0"></textarea>
-
-        <div id="counter-container">
-          <span id="counter">0 | 500</span>
+        <div id="area-span-container">
+          <textarea name="" id="textarea" cols="60" rows="5" maxlength="500" minlength="0"></textarea>
+          <div id="span-container">
+            <span id="textarea-span">500</span>
+          </div>
         </div>
 
       </div>
