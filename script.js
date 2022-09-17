@@ -31,15 +31,6 @@ document.addEventListener('change', () => {
   }
 });
 
-// Contador de caracteres da textarea
-
-const textArea = document.querySelector('#textarea');
-const counter = document.querySelector('#counter');
-
-textArea.addEventListener('input', () => {
-  counter.innerText = `${textArea.textLength} | ${textArea.maxLength - (textArea.textLength)}`;
-});
-
 //Estilizando Página
 
 const houses = document.getElementById('house');
@@ -74,3 +65,13 @@ const housesStyle = () => {
 }
 
 houses.addEventListener('change', housesStyle);
+
+// TextArea counter
+const spanArea = document.getElementById('textarea-span');
+const textArea = document.getElementById('textarea');
+
+const updateText = () => {
+  spanArea.innerText = `${textArea.maxLength - (textArea.textLength)}`;
+}
+
+textArea.addEventListener('input', updateText);

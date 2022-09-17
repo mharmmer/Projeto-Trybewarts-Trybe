@@ -179,6 +179,8 @@ main {
 }
 
 #rate-container {
+  display: flex;
+  justify-content: space-evenly;
   margin: 30px;
   padding-bottom: 50px;
   border-bottom: 1px solid grey;
@@ -192,11 +194,17 @@ main {
 
 #text-area-container textarea {
   border-radius: 5px;
+  height: 200px;
 }
 
-#counter-container {
-  align-self: center;
-  margin: 10px;
+#area-span-container {
+  position: relative;
+}
+
+#span-container {
+  position: absolute;
+  bottom: 8px;
+  left: 450px;
 }
 
 #agreement-container {
