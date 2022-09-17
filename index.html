@@ -12,7 +12,7 @@
 
 <body>
   <header class="header">
-    <img src="/images/trybewarts-colored.svg" alt="" class="trybewarts-header-logo">
+    <img src="images/trybewarts-colored.svg" alt="" class="trybewarts-header-logo">
     <h1 id="trybewarts-header-title">Trybewarts</h1>
     <form action="" class="trybewarts-login">
       <input type="email" name="email" id="email" placeholder="Email">
@@ -26,17 +26,16 @@
       <h2>Formulario de Avaliacao</h2>
 
       <div id="identifier-container">
-        <input type="text" name="" id="input-name" placeholder="Nome">
-        <input type="text" name="" id="input-lastname" placeholder="Sobrenome">
-        <input type="email" name="" id="input-email" placeholder="Email">
+        <input type="text" name="" id="input-name" class="identifier-class" placeholder="Nome">
+        <input type="text" name="" id="input-lastname" class="identifier-class" placeholder="Sobrenome">
+        <input type="email" name="" id="input-email" class="identifier-class" placeholder="Email">
 
-        <label for="house">Casa:</label>
-        <select name="" id="house" required>
-          <option hidden value="noneOption">Selecione sua casa aqui</option>
-          <option value="Gitnória" id="gitnoria-house">Gitnória</option>
-          <option value="Reactpuff" id="reactpuff-house">Reactpuff</option>
-          <option value="Corvinode" id="corvinode-house">Corvinode</option>
-          <option value="Pytherina" id="pytherina-house">Pytherina</option>
+        <select name="" id="house" required class="identifier-class" >
+          <option hidden value="noneOption" class="identifier-class">Selecione sua casa aqui</option>
+          <option value="Gitnória" id="gitnoria-house" class="identifier-class">Gitnória</option>
+          <option value="Reactpuff" id="reactpuff-house" class="identifier-class">Reactpuff</option>
+          <option value="Corvinode" id="corvinode-house" class="identifier-class">Corvinode</option>
+          <option value="Pytherina" id="pytherina-house" class="identifier-class">Pytherina</option>
         </select>
       </div>
 
