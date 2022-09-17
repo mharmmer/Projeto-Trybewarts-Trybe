@@ -48,21 +48,29 @@ const headerH1 = document.getElementById('trybewarts-header-title');
 const email = document.getElementById('email');
 const password = document.getElementById('password');
 const loginBtn = document.getElementById('login-button');
+const footerColor = document.getElementById('footer')
 
 const housesStyle = () => {
   if (houses.value === 'Gitnória') {
-    header.style.backgroundColor = '#7F0909';
-    headerH1.style.color = '#FFC500';
+    header.style.backgroundColor = 'rgba(223 9 9 / 20%)';
+    header.style.boxShadow = 'rgba(223 9 9 / 20%) 0px 4px 3px -1px';
+    headerH1.style.color = 'rgba(255 197 0 / 80%)';
+
   } else if (houses.value === 'Reactpuff') {
-    header.style.backgroundColor = '#E3BB0C';
-    headerH1.style.color = '#211F1B';
+    header.style.backgroundColor = 'rgba(227 187 12 / 20%)';
+    header.style.boxShadow = 'rgba(227 187 12 / 20%) 0px 4px 3px -1px';
+    headerH1.style.color = 'rgb(0 0 0 / 72%)';
+
   } else if (houses.value === 'Corvinode') {
-    header.style.backgroundColor = '#000A90';
-    headerH1.style.color = '#946B2D';
+    header.style.backgroundColor = 'rgba(0 10 144 / 20%)';
+    header.style.boxShadow = 'rgba(0 10 144 / 20%) 0px 4px 3px -1px';
+    headerH1.style.color = 'rgb(255 225 0 / 80%)';
+
   } else if (houses.value === 'Pytherina') {
-    header.style.backgroundColor = '#0d6217';
-    headerH1.style.color = '#AAAAAA';
-  }
+    header.style.backgroundColor = 'rgba(13 98 23 / 20%)';
+    header.style.boxShadow = 'rgba(13 98 23 / 20%) 0px 4px 3px -1px';
+    headerH1.style.color = 'rgba(180 180 180 / 80%)';
+}
 }
 
 houses.addEventListener('change', housesStyle);

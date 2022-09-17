@@ -30,16 +30,15 @@ body {
   align-items: center;
 
   /* background */
-  background-color: rgba(0, 255, 34, 0.05);
-  backdrop-filter: saturate(223%) blur(10px);
+  background-color: rgba(255, 255, 255, 0.2);
+  backdrop-filter: saturate(200%) blur(10px);
 
   /* size */
   height: 10vh;
   width: auto;
-  /* font-family: 'Arvo', serif; */
 
   /* border */
-  box-shadow:rgba(0, 255, 34, 0.05) 0px 4px 3px -1px;
+  box-shadow:rgb(255, 255, 255, 0.2) 0px 4px 3px -1px;
 }
 
 .trybewarts-header-logo {
@@ -90,8 +89,9 @@ main {
 #evaluation-form {
   /* background */
   background-color: rgba(255, 255, 255, 0.3);
-  backdrop-filter: saturate(223%) blur(10px);
+  backdrop-filter: saturate(200%) blur(10px);
   color: rgba(0, 0, 0, 0.800);
+  box-shadow: rgba(255, 255, 255, 0.3) 0px 0px 3px 1px;
 
   /* displays */
   display: flex;
@@ -106,10 +106,10 @@ main {
   height: fit-content;
 }
 
-#evaluation-form:hover {
+/* #evaluation-form:hover {
   box-shadow: inset 0px 0px 70px 15px rgb(255 255 255 / 10%);
   transition: 50ms;
-}
+} */
 
 #evaluation-form h2 {
   margin-bottom: 40px;
