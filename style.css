@@ -135,6 +135,7 @@ main {
   width: 40%;
   margin: 1%;
   border-radius: 5px;
+  height: 35px;
 }
 
 #all-container {
@@ -213,9 +214,17 @@ main {
   width: 100%;
 }
 
-#submit-btn {
-  margin: 20px;
+#button-container {
+  display: flex;
   width: 100%;
+  justify-content: space-around;
+}
+
+#submit-btn, #reset-btn {
+  width: 150px;
+  height: 35px;
+  border-radius: 5px;
+  border: 1px solid gray;
 }
 
 footer {

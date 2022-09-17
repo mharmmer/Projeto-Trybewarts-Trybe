@@ -21,6 +21,9 @@ document.addEventListener('click', (e) => {
   if (e.target.id === 'submit-btn') {
     generateInformation();
   }
+  if (e.target.id === 'reset-btn') {
+    resetPage();
+  }
 });
 
 document.addEventListener('change', () => {
@@ -61,7 +64,11 @@ const housesStyle = () => {
     header.style.backgroundColor = 'rgba(13 98 23 / 20%)';
     header.style.boxShadow = 'rgba(13 98 23 / 20%) 0px 4px 3px -1px';
     headerH1.style.color = 'rgba(180 180 180 / 80%)';
-}
+  } else if (houses.value === 'noneOption') {
+    header.style.backgroundColor = 'rgba(255, 255, 255, 0.2)';
+    header.style.boxShadow = 'rgb(255, 255, 255, 0.2) 0px 4px 3px -1px';
+    headerH1.style.color = 'rgba(245, 245, 245, 0.900)';
+  }
 }
 
 houses.addEventListener('change', housesStyle);
@@ -76,3 +83,11 @@ const updateText = () => {
 }
 
 textArea.addEventListener('input', updateText);
+
+// Resetando página
+
+const resetPage = () => {
+  header.style.backgroundColor = 'rgba(255, 255, 255, 0.2)';
+  header.style.boxShadow = 'rgb(255, 255, 255, 0.2) 0px 4px 3px -1px';
+  headerH1.style.color = 'rgba(245, 245, 245, 0.900)';
+}
