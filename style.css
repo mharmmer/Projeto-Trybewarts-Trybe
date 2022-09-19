@@ -1,5 +1,5 @@
 
-@import url('https://fonts.googleapis.com/css2?family=Arvo:wght@400;700&family=Overpass:wght@200;300;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inknut+Antiqua:wght@300;400;500;600;700;800;900&family=Overpass:wght@100;200;300;400;500;600;700;800;900&display=swap');
 
 
 * {
@@ -13,15 +13,14 @@ html {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+  /* font-family: 'Inknut Antiqua', serif; */
   font-family: 'Overpass', sans-serif;
-  /* font-family: 'Arvo', serif; */
   font-weight: 300;
 }
 
 body {
   display: flex;
   flex-direction: column;
-  /* height: 100vh; */
 }
 
 .header {
@@ -32,6 +31,7 @@ body {
   /* background */
   background-color: rgba(255, 255, 255, 0.2);
   backdrop-filter: saturate(200%) blur(10px);
+  transition: 1s;
 
   /* size */
   height: 10vh;
@@ -50,6 +50,7 @@ header h1 {
   color: rgba(245, 245, 245, 0.900);
   text-align: center;
   flex-grow: 30;
+  transition: 1s;
 }
 
 header form {
@@ -91,6 +92,7 @@ main {
   background-color: rgba(255, 255, 255, 0.3);
   backdrop-filter: saturate(200%) blur(10px);
   color: rgba(0, 0, 0, 0.800);
+  font-weight: 500;
   box-shadow: rgba(255, 255, 255, 0.3) 0px 0px 3px 1px;
 
   /* displays */
@@ -103,16 +105,18 @@ main {
   margin: 2%;
   padding: 3%;
   border-radius: 10px;
-  height: 10%;
 }
 
 #evaluation-form:hover {
-  backdrop-filter: saturate(150%) blur(10px);
-  transition: 50ms;
+  background-color: rgba(255, 255, 255, 40%);
+  backdrop-filter: saturate(200%) blur(30px);
+  transition: 0.5s;
+
 }
 
 #evaluation-form h2 {
   margin-bottom: 40px;
+  color: rgba(10, 10, 10, 0.8);
 }
 
 #identifier-container {
@@ -125,11 +129,11 @@ main {
 
 #house {
   width: 40.5%;
+  height: auto;
 }
 
 .identifier-class {
   display: flex;
-  flex-grow: 1;
   text-align: center;
   color: grey;
   width: 40%;
@@ -181,23 +185,39 @@ main {
 
 #rate-container {
   display: flex;
-  justify-content: space-evenly;
   margin: 30px;
   padding-bottom: 50px;
   border-bottom: 1px solid grey;
   width: 100%;
+  justify-content: space-between;
 }
 
+#label-rate {
+  display: flex;
+}
 #text-area-container {
+  /* display */
   display: flex;
   flex-direction: column;
+  align-items: center;
+
+  /* border */
+  border-bottom: 1px solid grey;
+  width: 100%;
+  padding: 4% 0% 4% 0%;
+
 }
 
 #text-area-container textarea {
   border-radius: 5px;
-  height: 200px;
   font-family: 'Overpass', sans-serif;
-  padding: 10px;
+
+  /* size */
+  min-width: 485px;
+  min-height: 100px;
+  resize: none;
+  padding: 10px 35px 10px 10px;
+  font-size: medium;
 }
 
 #area-span-container {
@@ -210,10 +230,20 @@ main {
   left: 450px;
 }
 
+#textarea-span {
+  padding: 0px 0px 0px 35px;
+}
+
 #agreement-container {
   margin: 20px;
   display: flex;
   width: 100%;
+  justify-content: space-evenly;
+
+    /* border */
+    border-bottom: 1px solid grey;
+    width: 100%;
+    padding: 4% 0% 4% 0%;
 }
 
 #button-container {
@@ -226,7 +256,9 @@ main {
   width: 150px;
   height: 35px;
   border-radius: 5px;
-  border: 1px solid gray;
+  border: 3px solid gray;
+  backdrop-filter: blur(10%);
+  background-color: rgba(245, 245, 245);
 }
 
 footer {
