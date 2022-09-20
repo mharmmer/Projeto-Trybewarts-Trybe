@@ -33,7 +33,7 @@
         <input type="email" name="" id="input-email" class="identifier-class" placeholder="Email">
 
         <select name="" id="house" required class="identifier-class">
-          <option hidden value="noneOption" class="identifier-class" >Selecione sua casa aqui</option>
+          <option hidden value="noneOption" class="identifier-class">Selecione sua casa aqui</option>
           <option value="Gitnória" id="gitnoria-house" class="identifier-class">Gitnória</option>
           <option value="Reactpuff" id="reactpuff-house" class="identifier-class">Reactpuff</option>
           <option value="Corvinode" id="corvinode-house" class="identifier-class">Corvinode</option>
@@ -44,38 +44,78 @@
       <div id="all-container">
 
         <div id="family-container">
-          <label for="label-family" id="label-family">Qual sua família?</label>
-          <input type="radio" name="family" id="label-family" value="Frontend"> Família Frontend</input>
+
+          <label for="label-family1 label-family2 label-family3">Qual sua família?</label>
           <br>
-          <input type="radio" name="family" id="label-family" value="Backend"> Família Backend</input>
+
+          <label for="label-family1">
+            <input type="radio" id="label-family1" class="label-family" name="Family" value="Frontend">
+            </input>Família Frontend</label>
           <br>
-          <input type="radio" name="family" id="label-family" value="FullStack"> Família FullStack</input>
+
+          <label for="label-family2">
+            <input type="radio" id="label-family2" class="label-family" name="Family" value="Backend">
+            </input>Família Backend</label>
+          <br>
+
+          <label for="label-family3">
+            <input type="radio" id="label-family3" class="label-family" name="Family" value="FullStack">
+            </input>Família FullStack
+          </label>
+
         </div>
 
         <div id="subject-container">
-          <label for="label-content" id="label-content">Qual conteúdo você está com mais vontade de aprender?</label>
-          <input type="checkbox" name="subject" id="label-content" value="HoFs" class="subject">HoFs
-          <input type="checkbox" name="subject" id="label-content" value="Jest" class="subject">Jest
-          <input type="checkbox" name="subject" id="label-content" value="Promises" class="subject">Promises
-          <input type="checkbox" name="subject" id="label-content" value="React" class="subject">React
-          <input type="checkbox" name="subject" id="label-content" value="SQL" class="subject">SQL
-          <input type="checkbox" name="subject" id="label-content" value="Python" class="subject">Python
+          
+          <label for="label-content1 label-content2 label-content3 label-content4 label-content5 label-content6">Qual conteúdo você está com mais vontade de aprender?</label>
+
+        <label for="label-content1" class="checkmark-container">
+          <input type="checkbox" name="subject" id="label-content1" value="HoFs" class="subject">HoFs
+          <span class="checkmark"></span>
+        </label>
+
+        <label for="label-content2" class="checkmark-container">
+          <input type="checkbox" name="subject" id="label-content2" value="Jest" class="subject">Jest
+          <span class="checkmark"></span>
+        </label>
+
+        <label for="label-content3" class="checkmark-container">
+          <input type="checkbox" name="subject" id="label-content3" value="Promises" class="subject">Promises
+          <span class="checkmark"></span>
+        </label>
+
+        <label for="label-content4" class="checkmark-container">
+          <input type="checkbox" name="subject" id="label-content4" value="React" class="subject">React
+          <span class="checkmark"></span>
+        </label>
+
+
+        <label for="label-content5" class="checkmark-container">
+          <input type="checkbox" name="subject" id="label-content5" value="SQL" class="subject">SQL
+          <span class="checkmark"></span>
+        </label>
+
+        <label for="label-content6" class="checkmark-container">
+          <input type="checkbox" name="subject" id="label-content6" value="Python" class="subject">Python
+          <span class="checkmark"></span>
+        </label>
         </div>
 
       </div>
 
       <div id="rate-container">
-        <label for="label-rate" id="label-rate">Como você avalia a Trybewarts?</label>
-        <input type="radio" name="rate" id="label-rate" value="1">1
-        <input type="radio" name="rate" id="label-rate" value="2">2
-        <input type="radio" name="rate" id="label-rate" value="3">3
-        <input type="radio" name="rate" id="label-rate" value="4">4
-        <input type="radio" name="rate" id="label-rate" value="5">5
-        <input type="radio" name="rate" id="label-rate" value="6">6</input>
-        <input type="radio" name="rate" id="label-rate" value="7">7
-        <input type="radio" name="rate" id="label-rate" value="8">8
-        <input type="radio" name="rate" id="label-rate" value="9">9
-        <input type="radio" name="rate" id="label-rate" value="10">10
+        <p>Como você avalia a Trybewarts?</p>
+
+        <label for="rate1"><input type="radio" name="rate" id="rate1" value="1">1</label>
+        <label for="rate2"><input type="radio" name="rate" id="rate2" value="2">2</label>
+        <label for="rate3"><input type="radio" name="rate" id="rate3" value="3">3</label>
+        <label for="rate4"><input type="radio" name="rate" id="rate4" value="4">4</label>
+        <label for="rate5"><input type="radio" name="rate" id="rate5" value="5">5</label>
+        <label for="rate6"><input type="radio" name="rate" id="rate6" value="6">6</label>
+        <label for="rate7"><input type="radio" name="rate" id="rate7" value="7">7</label>
+        <label for="rate8"><input type="radio" name="rate" id="rate8" value="8">8</label>
+        <label for="rate9"><input type="radio" name="rate" id="rate9" value="9">9</label>
+        <label for="rate10"><input type="radio" name="rate" id="rate10" value="10">10</label>
       </div>
 
       <div id="text-area-container">
@@ -93,13 +133,13 @@
 
       <div id="agreement-container">
         <label for="agreement" id="label-infos">Você concorda com o uso das informações acima?</label>
-        <input type="checkbox" name="" id="agreement">
+        <input type="checkbox" name="checked" id="agreement">
       </div>
 
       <div id="button-container">
         <button type="reset" id="reset-btn">Resetar</button>
-      <button type="submit" id="submit-btn">Enviar</button>
-     </div>
+        <button type="submit" id="submit-btn">Enviar</button>
+      </div>
     </form>
   </main>
 
