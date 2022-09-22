@@ -10,7 +10,6 @@
 
 html {
   background-image: url('images/AeonX_very_dark_background_with_few_lights_in_the_background_a__ae5a6199-1c6b-46e2-ad3e-0d59e126b9c4.png');
-  background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   /* font-family: 'Inknut Antiqua', serif; */
@@ -22,6 +21,23 @@ html {
 body {
   display: flex;
   flex-direction: column;
+}
+
+#nimbus {
+  width: 250px;
+  position: absolute;
+  animation: anime 8s infinite;
+}
+
+@keyframes anime {
+  0% {
+    margin-top: 80vh;
+    margin-left: 0vw;
+  }
+  100% {
+    margin-top: 0vh;
+    margin-left: 85vw;
+  }
 }
 
 .header {
@@ -53,6 +69,7 @@ header h1 {
   text-align: center;
   flex-grow: 30;
   transition: 1s;
+  padding-left: 23vw;
 }
 
 header form {
@@ -107,6 +124,7 @@ main {
   margin: 2%;
   padding: 1%;
   border-radius: 10px;
+  height: 700px;
 }
 
 #evaluation-form:hover {
@@ -269,7 +287,7 @@ height: 100%;
 }
 
 #agreement-container {
-  padding: 2% 0%;
+  padding: 0% 0%;
   display: flex;
   width: 100%;
   justify-content: space-evenly;
@@ -307,6 +325,7 @@ footer {
   background-color: rgba(255, 255, 255, 0.3);
   backdrop-filter: blur(10px);
   color: whitesmoke;
+  transition: 1s;
 
   /* displays */
   display: flex;
@@ -318,6 +337,6 @@ footer {
   height: 60px;
   bottom: 0;
   width: 100%;
-  position: fixed;
+  position: sticky;
   box-shadow:rgb(255 255 255 / 30%) 0px 4px 3px 6px, 0 0 40px rgb(8 7 16 / 80%);
 }
