@@ -5,3 +5,6 @@
   <img src="images/README/Aprovado.png">
 </div>
 <h2>Preview:</h2>
+<div>
+  <img src="images/README/Preview.png">
+</div>
