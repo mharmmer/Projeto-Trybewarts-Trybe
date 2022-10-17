@@ -5,7 +5,7 @@
   <img src="images/README/Aprovado.png">
 </div>
 <h2>Visit the Project here:</h2>
-<div>https://mharmmer.github.io/Projeto-Trybewarts-Trybe/</div>
+<div>https://mharmmer.github.io/Trybewarts-Project-Trybe/</div>
 <h2>Preview:</h2>
 <div>
   <img src="images/README/Preview.png">
